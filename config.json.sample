@@ -1,0 +1,5 @@
+{
+	"otp":{
+		"secret":"YOUR API KEY"
+	}
+}
