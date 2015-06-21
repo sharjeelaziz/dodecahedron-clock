@@ -13,17 +13,17 @@ Video
 Pre-requisites
 --------------
 Ensure that the SPI kernel driver is enabled:
-
-  pi@raspberrypi ~ $ dmesg | grep spi
-  [    6.164368] bcm2708_spi 20204000.spi: master is unqueued, this is deprecated
-  [    6.489381] bcm2708_spi 20204000.spi: SPI Controller at 0x20204000 (irq 80)
-
+```
+pi@raspberrypi ~ $ dmesg | grep spi
+[    6.164368] bcm2708_spi 20204000.spi: master is unqueued, this is deprecated
+[    6.489381] bcm2708_spi 20204000.spi: SPI Controller at 0x20204000 (irq 80)
+```
 And that the devices are successfully installed in /dev:
-
-  pi@raspberrypi ~ $ ls -l /dev/spi*
-  crw-rw---T 1 root spi 153, 0 Dec 31  1969 /dev/spidev0.0
-  crw-rw---T 1 root spi 153, 1 Dec 31  1969 /dev/spidev0.1
-
+```
+pi@raspberrypi ~ $ ls -l /dev/spi*
+crw-rw---T 1 root spi 153, 0 Dec 31  1969 /dev/spidev0.0
+crw-rw---T 1 root spi 153, 1 Dec 31  1969 /dev/spidev0.1
+```
 Refer to http://www.raspberrypi.org/documentation/hardware/raspberrypi/spi/README.md if the devices do not appear before proceeding.
 
 GPIO pin-outs
